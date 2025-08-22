@@ -10,7 +10,7 @@ f = open("anshu.txt","rt")  #read and text by default
 
 #content  = f.read()
 
-'''for line in f:              Print whole file content
+'''for line in f:              Print whole file contents
     print(line, end="")''' 
 
 """for line in content:        Print character by character            
