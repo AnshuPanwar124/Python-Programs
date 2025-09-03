@@ -1,7 +1,7 @@
 class Employee:
     no_of_leaves = 8   #Class variable is class Property, It is shared by all instances of that class.
 
-    def __init__(self, name, salary, role): #Constructor 
+    def __init__(self, name, salary, role): #Constructor is used for initialize the object ,called automatically when an object is created from a class.
         self.name = name
         self.salary = salary
         self.role = role
