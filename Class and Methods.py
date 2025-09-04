@@ -8,17 +8,14 @@ class Employee:
      
     def printdetails(self):
         return f"Name is {self.name}. Salary is {self.salary} and role is {self.role}"
+    
+    @classmethod             # It is bound to the class itself, rather than to an instance of the class.
+    def change_leaves(cls, newleaves):
+        cls.no_of_leaves=newleaves
 
+rohan = Employee("Rohan", 255, "Instructor")
 harry = Employee("Harry", 455, "Instructor")
-print(harry.salary)
-'''Rohan = Employee()
+harry.change_leaves(34)
 
-harry.name = "Harry"
-harry.salary = 455
-harry.role = "Instructor"
-
-Rohan.name = "Rohan"
-Rohan.salary = 4554
-Rohan.role = "Student"
-
-print(Rohan.printdetails())'''
+#Employee.no_of_leaves = 9
+print(harry.no_of_leaves)
