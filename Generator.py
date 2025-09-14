@@ -1,7 +1,7 @@
 """
-Iterable -- __iter__() or __getitem__() eg : string
-Iterator -- __next__()
-Iteration -- 
+Iterable -- __iter__() or __getitem__() eg : string --you can create an iterator from an iterable using iter() function.
+Iterator -- __next__()  -- It is used to iterate over an iterable.
+Iteration -- It is the process of repeatedly executing a block of code for each item in a sequence. eg:for loop, while loop and list comprehension.
 
 """
 def gen(n):     #Generator returns an iterator object. It use yield to produce a series of results over time.
